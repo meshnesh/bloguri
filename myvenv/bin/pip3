@@ -1,4 +1,4 @@
-#!/Volumes/Projects/bloguri/myvenv/bin/python3
+#!/home/tonny/bloguri/myvenv/bin/python3.4
 
 # -*- coding: utf-8 -*-
 import re
