@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9bf659f-c104-4a87-bf57-a90dcefc3347" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/urls.py" />
     </list>
     <ignored path="bloguri.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -477,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1458890762792</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added html file url&#10;">
+      <created>1458891060715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1458891060715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -511,7 +517,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added current time zone" />
     <MESSAGE value="added html file post_list.html&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added html file post_list.html&#10;" />
+    <MESSAGE value="added html file url&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added html file url&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
