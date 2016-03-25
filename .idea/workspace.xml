@@ -483,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1458891060715</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working post_list.html&#10;">
+      <created>1458891586660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1458891586660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -518,7 +525,8 @@
     <MESSAGE value="added current time zone" />
     <MESSAGE value="added html file post_list.html&#10;" />
     <MESSAGE value="added html file url&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added html file url&#10;" />
+    <MESSAGE value="working post_list.html&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="working post_list.html&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
