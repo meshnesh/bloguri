@@ -3,13 +3,22 @@ from time import timezone
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.shortcuts import render
 
 from blog.models import Post
+
+
+
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
+
 
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
+
+
 
 def post_new(request):
     if request.method == "POST":
@@ -23,6 +32,10 @@ def post_new(request):
     else:
         form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+
+
 
 
 def post_edit(request, pk):
