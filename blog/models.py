@@ -3,9 +3,18 @@ from django.utils import timezone
 from django.shortcuts import render
 
 
+
+def upload_location(instance, filename):
+	return "%s/%s" %(instance.id, filename)
+
+
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
+    image = models.ImageField(upload_to=upload_location,
+		null=True,
+        blank=True,
+                             )
     text = models.TextField()
     created_date = models.DateTimeField(
             default=timezone.now)
