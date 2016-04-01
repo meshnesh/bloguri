@@ -1,5 +1,6 @@
+{% load staticfiles %}
 .page-header {
-    background-color: #ff9400;
+    background-image: url("../img/back.jpg");
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
