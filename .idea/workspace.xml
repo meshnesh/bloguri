@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9bf659f-c104-4a87-bf57-a90dcefc3347" name="Default" comment="with addedpost in the db">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/img/back.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/blog.css" afterPath="$PROJECT_DIR$/blog/static/css/blog.css" />
-    </list>
+    <list default="true" id="f9bf659f-c104-4a87-bf57-a90dcefc3347" name="Default" comment="with addedpost in the db" />
     <ignored path="bloguri.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
