@@ -2,12 +2,12 @@
 .page-header {
     background-image: url("../img/back.jpg");
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 45px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 100pt;
+    color: #fff;
+    font-size: 80pt;
     text-align: center;
     text-decoration: none;
 }
@@ -40,7 +40,8 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .post h1 a, .post h1 a:visited {
