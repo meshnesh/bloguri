@@ -1,4 +1,8 @@
 {% load staticfiles %}
+
+body {
+ background: linear-gradient(to left, #fff , #828282);
+}
 .page-header {
     background-image: url("../img/wall.jpg");
     margin-top: 0;
@@ -21,7 +25,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    color: #828282;
+    color: #fff;
 }
 
 .save {
@@ -33,7 +37,7 @@ h1, h2, h3, h4 {
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
+    color: #fff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
@@ -45,5 +49,6 @@ h1, h2, h3, h4 {
 }
 
 .post h1 a, .post h1 a:visited {
+    text-align: center;
     color: #000;
 }
