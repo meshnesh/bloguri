@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!doctype html>
 <html lang="en"><head>
 <meta charset="UTF-8">
@@ -12,9 +13,9 @@
     <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                <link rel="stylesheet" href="css/foundation.css" type="text/css" />
-                <link rel="stylesheet" href="css/app.css" type="text/css" />
-                <script src="js/modernizr.js"></script>
+                <link rel="stylesheet" href="{% static 'css/foundation.css' %}" type="text/css" />
+                <link rel="stylesheet" href="{% static 'css/app.css' %}" type="text/css" />
+                <script src="{% static 'js/modernizr.js' %}"></script>
                 <!-- Modernizr -->
                 <!--    Google Annalytics  starts here.Copy paste your GA code and place it here -->
                 <script>
@@ -35,7 +36,7 @@
                 
               <nav>
   <div class="centre">
-      <img src="img/me.jpg">
+      <img src="{% static 'img/me.jpg' %}">
     <h4>Antony Nesh</h4>
     <ul class="clearfix">
       <li>
@@ -64,98 +65,39 @@
 </nav>
 
 <main>
+        <div class="post">
+            <div class="date">
+                
+            </div>
+            
+            <p></p>
+        </div>
 
+
+{% for post in posts %}
   <article>
 
-    <h2>Imaginary Time</h2>
+    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 
 
-    <p>Imaginary time is a concept derived from quantum mechanics and is essential in connecting quantum mechanics with statistical mechanics.</p>
+    <div>{{ post.text|linebreaks }}</div>
 
 
-    <blockquote>One might think this means that imaginary numbers are just a mathematical game having nothing to do with the real world. From the viewpoint of positivist philosophy, however, one cannot determine what is real. All one can do is find which mathematical
-      models describe the universe we live in. It turns out that a mathematical model involving imaginary time predicts not only effects we have already observed but also effects we have not been able to measure yet nevertheless believe in for other reasons.
-      So what is real and what is imaginary? Is the distinction just in our minds?<br><small>Stephen Hawking</small></blockquote>
-
-    <p>
-      Imaginary time can be difficult to visualize. If we imagine "regular time" as a horizontal line running between "past" in one direction and "future" in the other, then imaginary time would run perpendicular to this line as the imaginary numbers run perpendicular
-      to the real numbers in the complex plane. Imaginary time is not imaginary in the sense that it is unreal or made-up — it simply runs in a direction different from the type of time we experience. In essence, imaginary time is a way of looking at
-      the time dimension as if it were a dimension of space: you can move forward and backward along imaginary time, just like you can move right and left in space.</p>
-
-
-    <p class="post-end clearfix">3 hours ago<span>I. Newton</span></p>
+    <p class="post-end clearfix">{{ post.published_date }}<span>I. Newton</span></p>
 
     </div>
   </article>
+    {% endfor %}
 
 
-  <article>
-    <h2>Alpha Particles</h2>
-
-    <p>An alpha particle is a particle made up of two protons and two neutrons. Since this configuration is similar to that of a helium nucleus, it’s often referred to as a helium nucleus. The term is commonly used in nuclear physics, and is one of the three
-      particles commonly emitted during a radioactive decay, i.e., alpha, beta, and gamma particles.</p>
-
-    <p>Alpha particles gained prominence during the early days of particle physics when scientists used them as projectiles to bombard certain targets. One of the most widely celebrated experiments that made use of alpha particles was that of Ernest Rutherford’s
-      that led to the discovery of the atom’s structure.</p>
-
-    <p>Using alpha particles as projectiles and gold foils as targets, Rutherford was able to come to the conclusion that atoms were made up of very dense positively charged cores with the much lighter negatively-charged electrons orbiting around it. His
-      conclusion was based on the observation that the trajectories of the alpha particles were slightly deviated (as expected) at most times but in rare instances bounced off like ping-pong balls thrown against a wall.</p>
-
-
-    <p class="post-end clearfix">4 days ago<span>L. Boltzmann</span></p>
-  </article>
-
-  <article>
-    <h2>M Theory</h2>
-
-
-    <p>In theoretical physics, M-theory is an extension of string theory in which 11 dimensions of spacetime are identified as 7 higher-dimensions plus the 4 common dimensions (11D st = 7 hd + 4D). Proponents believe that the 11-dimensional theory unites
-      all five 10 dimensional string theories (10D st = 6 hd + 4D) and supersedes them. Though a full description of the theory is not known, the low-entropy dynamics are known to be supergravity interacting with 2- and 5-dimensional membranes.</p>
-
-    <p>This idea is the unique supersymmetric theory in 11 dimensions (11D), with its low-entropy matter content and interactions fully determined, and can be obtained as the strong coupling limit of type IIA string theory because a new dimension of space
-      emerges as the coupling constant increases.</p>
-
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Calabi_yau.jpg/230px-Calabi_yau.jpg"></p>
-
-    <p>Drawing on the work of a number of string theorists (including Ashoke Sen, Chris Hull, Paul Townsend, Michael Duff and John Schwarz), Edward Witten of the Institute for Advanced Study suggested its existence at a conference at USC in 1995, and used
-      M-theory to explain a number of previously observed dualities, initiating a flurry of new research in string theory called the second superstring revolution.</p>
-
-    <p>In the early 1990s, it was shown that the various superstring theories were related by dualities which allow the description of an object in one super string theory to be related to the description of a different object in another super string theory.
-      These relationships imply that each of the super string theories is a different aspect of a single underlying theory, proposed by Witten, and named "M-theory".</p>
-
-
-    <p class="post-end clearfix">1 week ago<span>M. Planck</span></p>
-
-  </article>
- <article>
-    <h2>Tonny</h2>
-
-
-    <p>In theoretical physics, M-theory is an extension of string theory in which 11 dimensions of spacetime are identified as 7 higher-dimensions plus the 4 common dimensions (11D st = 7 hd + 4D). Proponents believe that the 11-dimensional theory unites
-      all five 10 dimensional string theories (10D st = 6 hd + 4D) and supersedes them. Though a full description of the theory is not known, the low-entropy dynamics are known to be supergravity interacting with 2- and 5-dimensional membranes.</p>
-
-    <p>This idea is the unique supersymmetric theory in 11 dimensions (11D), with its low-entropy matter content and interactions fully determined, and can be obtained as the strong coupling limit of type IIA string theory because a new dimension of space
-      emerges as the coupling constant increases.</p>
-
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Calabi_yau.jpg/230px-Calabi_yau.jpg"></p>
-
-    <p>Drawing on the work of a number of string theorists (including Ashoke Sen, Chris Hull, Paul Townsend, Michael Duff and John Schwarz), Edward Witten of the Institute for Advanced Study suggested its existence at a conference at USC in 1995, and used
-      M-theory to explain a number of previously observed dualities, initiating a flurry of new research in string theory called the second superstring revolution.</p>
-
-    <p>In the early 1990s, it was shown that the various superstring theories were related by dualities which allow the description of an object in one super string theory to be related to the description of a different object in another super string theory.
-      These relationships imply that each of the super string theories is a different aspect of a single underlying theory, proposed by Witten, and named "M-theory".</p>
-
-
-    <p class="post-end clearfix">1 week ago<span>M. Planck</span></p>
-
-  </article>
+  
 </main>
     
     
     
                 <!--   After all html content Your scripts -->
                 <!--Linked to your local project scripts that are located within the project: js-->
-                <script src="js/script.js" type="text/javascript"></script>
+                <script src="{% static 'js/script.js' %}" type="text/javascript"></script>
                 <!--  Scripts hosted on CDN  -->
                 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
@@ -164,10 +106,10 @@
                 <script src="//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js" type="text/javascript"></script>
                 <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js" type="text/javascript"></script>
                 <!-- Your custom javascript code goes here -->
-                <script src="js/vendor/jquery.min.js"></script>
-                <script src="js/vendor/what-input.min.js"></script>
-                <script src="js/foundation.min.js"></script>
-                <script src="js/app.js"></script>
+                <script src="{% static 'js/vendor/jquery.min.js' %}"></script>
+                <script src="{% static 'js/vendor/what-input.min.js' %}"></script>
+                <script src="{% static 'js/foundation.min.js' %}"></script>
+                <script src="{% static 'js/app.js' %}"></script>
                 <script type="text/javascript">
        function autorun()
        {
